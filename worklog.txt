@@ -42,3 +42,13 @@ http://www.iteye.com/news/category/opensource
 6.member-login=passport
   reg=passport-reg
   member=passport-member
+
+7.列出GIT设置
+git config --list
+git log
+git status -s
+删除
+git rm
+git commit -m
+git push origin master
+更新
