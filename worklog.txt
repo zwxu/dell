@@ -55,3 +55,4 @@ git push origin master
 git push(一定要是对应dell.git目录)
 上传
 git clone
+git diff不同开发者修改的同一文件
