@@ -1,0 +1,35 @@
+git xuzhiwei@wondersgroup.com xuzhiwei918
+email xuzhiwei Xzw910918
+
+（Centralized Version Control Systems，简称 CVCS ）
+（Distributed Version Control System，简称 DVCS ）
+ git config --list  git status git log
+--三种状态 
+已提交表示该文件已经被安全地保存在本地数据库中了；
+已修改表示修改了某个文件，但还没有提交保存；
+已暂存表示把已修改的文件放在下次提交时要保存的清单中。
+--用户信息
+git config --global user.name "John Doe"
+git config --global user.email johndoe@ example.com
+--差异分析工具
+git config --global merge.tool vimdiff
+
+changes not staged for commit 未被追踪
+译注：其实git add 的潜台词就是把目标文件快照放入暂存区域，
+也就是 add file into staged area，
+同时未曾跟踪过的文件标记为需要跟踪。这样就好理解后续 add 操作的实际意义了。
+changes to be committed 已被追踪
+git diff --cached 
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/BrentHuang/MyRepo.git
+git push -u origin master
+
+在本地新建一个分支： git branch Branch1
+切换到你的新分支: git checkout Branch1
+将新分支发布在github上： git push origin Branch1
+在本地删除一个分支： git branch -d Branch1
+在github远程端删除一个分支： git push origin :Branch1   (分支名前的冒号代表删除)
